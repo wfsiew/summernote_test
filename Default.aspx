@@ -6,10 +6,10 @@
 <head runat="server">
   <title></title>
   <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <link href="css/summernote.css" rel="stylesheet" />
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.6.16/summernote.css" rel="stylesheet" />
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/summernote.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.6.16/summernote.js"></script>
   <script src="js/app.js"></script>
 </head>
 <body>
@@ -25,6 +25,7 @@
       </ContentTemplate>
     </asp:UpdatePanel>
     <textarea id="editorBody" runat="server" cols="30" rows="10"></textarea>
+    <asp:Button ID="btn" runat="server" OnClick="btn_Click" Text="Click" />
   </form>
 </body>
 </html>

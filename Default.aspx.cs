@@ -16,4 +16,9 @@ public partial class _Default : System.Web.UI.Page
     {
         this.lblDraft.Text = editorBody.InnerHtml;
     }
+
+    protected void btn_Click(object sender, EventArgs e)
+    {
+        this.lblDraft.Text = editorBody.InnerHtml;
+    }
 }
