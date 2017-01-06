@@ -14,11 +14,11 @@ public partial class _Default : System.Web.UI.Page
 
     protected void timerAutoSaveDraft_Tick(object sender, EventArgs e)
     {
-        this.lblDraft.Text = editorBody.InnerHtml;
+        this.lblDraft.Text = Server.HtmlEncode(txtcontent.Value) + "====" + editorBody.InnerText;
     }
 
     protected void btn_Click(object sender, EventArgs e)
     {
-        this.lblDraft.Text = editorBody.InnerHtml;
+        this.lblDraft.Text = Server.HtmlEncode(txtcontent.Value) + "====" + editorBody.InnerText;
     }
 }
